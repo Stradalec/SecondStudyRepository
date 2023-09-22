@@ -2,7 +2,7 @@
 * Автор: Калинин А.А.             *
 * Дата: 22.09.2023                *
 * Название: Вариант номер 3       *
-* https://onlinegdb.com/LdJlUbjss *
+* https://onlinegdb.com/VCx-sAiZv *
 **********************************/
 
 #include <iostream>
@@ -18,7 +18,7 @@ int main() {
   
   while (resistance <= 300) {
 
-    currentPower = resistance * pow(electromotiveForce /(resistance + internalResistance), 2);
+    currentPower = resistance * pow(electromotiveForce / (resistance + internalResistance), 2);
     
     cout.precision(5);
     cout << "External resistance: " << resistance << " Ω" <<  '\n'
