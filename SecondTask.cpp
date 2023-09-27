@@ -2,7 +2,7 @@
 * Автор: Калинин Андрей           *
 * Дата: 22.09.2023                *
 * Название: Вариант номер 3       *
-* https://onlinegdb.com/wYyt7mFJ7 *
+* https://onlinegdb.com/MNd9hXZKm *
 **********************************/
 
 #include <iostream>
