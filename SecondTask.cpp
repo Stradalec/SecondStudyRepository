@@ -11,11 +11,19 @@
 using namespace std;
 
 int main() {
-  int electromotiveForce    = 115;
-  double internalResistance = 29.7;
-  int resistance            = 10;
+  double electromotiveForce;
+  double internalResistance;
+  double resistance;
   double currentPower;
-  
+
+  cout << "Electromotive force = ";
+  cin >> electromotiveForce;
+  cout << "Internal resistance = ";
+  cin >> internalResistance;
+  cout << "Resistance = ";
+  cin >> resistance;
+  cout << " " << '\n';
+
   while (resistance <= 300) {
 
     currentPower = resistance * pow(electromotiveForce / (resistance + internalResistance), 2);
@@ -25,7 +33,12 @@ int main() {
          << "Current power: " << currentPower << " W" << '\n'
          << " " << '\n'; // This is done so that the results of iterations are separated.
          
-    resistance += 10;
+    if (resistance < 50) {
+      resistance += 10;
+    } else {
+      resistance += 50;
+    }
+   
   } 
   
   return 0;
