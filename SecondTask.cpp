@@ -2,7 +2,7 @@
 * Автор: Калинин Андрей           *
 * Дата: 22.09.2023                *
 * Название: Вариант номер 3       *
-* https://onlinegdb.com/MNd9hXZKm *
+* https://onlinegdb.com/lhV2bkFph *
 **********************************/
 
 #include <iostream>
@@ -24,7 +24,7 @@ int main() {
   cin >> resistance;
   cout << " " << '\n';
 
-  while (resistance <= 300) {
+  while (resistance < 50) {
 
     currentPower = resistance * pow(electromotiveForce / (resistance + internalResistance), 2);
     
@@ -32,14 +32,19 @@ int main() {
     cout << "External resistance: " << resistance << " Ω" <<  '\n'
          << "Current power: " << currentPower << " W" << '\n'
          << " " << '\n'; // This is done so that the results of iterations are separated.
-         
-    if (resistance < 50) {
-      resistance += 10;
-    } else {
-      resistance += 50;
+    
+    resistance += 10;
     }
-   
-  } 
+  
+  do {
+    currentPower = resistance * pow(electromotiveForce / (resistance + internalResistance), 2);
+    
+    cout.precision(5);
+    cout << "External resistance: " << resistance << " Ω" << '\n'
+        << "Current power: " << currentPower << " W" << '\n'
+        << " " << '\n'; // This is done so that the results of iterations are separated.
+
+    resistance += 50; } while (resistance <= 300);
   
   return 0;
 }
