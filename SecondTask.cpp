@@ -33,7 +33,7 @@ int main() {
          << "Current power: " << currentPower << " W" << '\n'
          << " " << '\n'; // This is done so that the results of iterations are separated.
     
-      resistance += 10;
+    resistance += 10;
   }
   
   do {
@@ -43,7 +43,7 @@ int main() {
         << "Current power: " << currentPower << " W" << '\n'
         << " " << '\n'; // This is done so that the results of iterations are separated.
 
-      resistance += 50; 
+    resistance += 50; 
   } while (resistance <= 300);
   
   return 0;
