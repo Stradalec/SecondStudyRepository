@@ -2,7 +2,7 @@
 * Автор: Калинин Андрей           *
 * Дата: 22.09.2023                *
 * Название: Вариант номер 3       *
-* https://onlinegdb.com/eaXjdBf1M *
+* https://onlinegdb.com/ZzulecoAi *
 **********************************/
 
 #include <iostream>
@@ -16,6 +16,7 @@ int main() {
   double resistance;
   double currentPower;
 
+  cout.precision(5);
   cout << "Electromotive force = ";
   cin >> electromotiveForce;
   cout << "Internal resistance = ";
@@ -28,7 +29,6 @@ int main() {
 
     currentPower = resistance * pow(electromotiveForce / (resistance + internalResistance), 2);
     
-    cout.precision(5);
     cout << "External resistance: " << resistance << " Ω" <<  '\n'
          << "Current power: " << currentPower << " W" << '\n'
          << " " << '\n'; // This is done so that the results of iterations are separated.
@@ -39,7 +39,6 @@ int main() {
   do {
     currentPower = resistance * pow(electromotiveForce / (resistance + internalResistance), 2);
     
-    cout.precision(5);
     cout << "External resistance: " << resistance << " Ω" << '\n'
         << "Current power: " << currentPower << " W" << '\n'
         << " " << '\n'; // This is done so that the results of iterations are separated.
