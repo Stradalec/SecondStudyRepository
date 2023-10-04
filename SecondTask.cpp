@@ -2,7 +2,7 @@
 * Автор: Калинин Андрей           *
 * Дата: 22.09.2023                *
 * Название: Вариант номер 3       *
-* https://onlinegdb.com/lhV2bkFph *
+* https://onlinegdb.com/eaXjdBf1M *
 **********************************/
 
 #include <iostream>
@@ -33,7 +33,7 @@ int main() {
          << "Current power: " << currentPower << " W" << '\n'
          << " " << '\n'; // This is done so that the results of iterations are separated.
     
-    resistance += 10;
+      resistance += 10;
     }
   
   do {
@@ -44,7 +44,8 @@ int main() {
         << "Current power: " << currentPower << " W" << '\n'
         << " " << '\n'; // This is done so that the results of iterations are separated.
 
-    resistance += 50; } while (resistance <= 300);
+      resistance += 50; 
+    } while (resistance <= 300);
   
   return 0;
 }
