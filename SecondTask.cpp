@@ -34,7 +34,7 @@ int main() {
          << " " << '\n'; // This is done so that the results of iterations are separated.
     
       resistance += 10;
-    }
+  }
   
   do {
     currentPower = resistance * pow(electromotiveForce / (resistance + internalResistance), 2);
@@ -45,7 +45,7 @@ int main() {
         << " " << '\n'; // This is done so that the results of iterations are separated.
 
       resistance += 50; 
-    } while (resistance <= 300);
+  } while (resistance <= 300);
   
   return 0;
 }
